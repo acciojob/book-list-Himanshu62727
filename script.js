@@ -42,8 +42,8 @@ submitButton.addEventListener('click', function (e) {
 });
 
 // Event listener for delete buttons (using event delegation)
-bookList.addEventListener('click', function (e) {
-  if (e.target.classList.contains('delete')) {
-    e.target.parentElement.parentElement.remove(); // Remove the row
+bookList.addEventListener('click', function (event) {
+  if (event.target.classList.contains('delete')) {
+    event.target.parentElement.parentElement.remove(); // Remove the row
   }
 });
