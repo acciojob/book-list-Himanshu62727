@@ -7,8 +7,8 @@ const submitButton = document.getElementById('submit');
 const bookList = document.getElementById('book-list');
 
 // Event listener for submit button
-submitButton.addEventListener('click', function (e) {
-  e.preventDefault(); // Prevent page reload
+submitButton.addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent page reload
 
   // Get input values
   const titleValue = title.value.trim();
